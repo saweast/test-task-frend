@@ -1,0 +1,8 @@
+@media screen and (min-width: 710px) {
+  .wrapper {
+    box-sizing: border-box;
+    width: 710px;
+    margin: 0 auto;
+    padding: 25px;
+  }
+}
