@@ -112,6 +112,7 @@ body {
   .friends progress {
     width: 75%;
     margin: 0 13% 25px;
+    height: 60px;
   }
   .friends input {
     width: 75%;
@@ -130,4 +131,71 @@ body {
     margin-top: 25px;
     font-size: 24px;
   }
+}
+
+
+::-webkit-progress-bar {
+    background: white;
+}
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-33deg,
+       rgba(0, 0, 0, .1) 0%,
+	     rgba(0,0, 0, .1) 10%,
+       transparent 10%,
+       transparent 15%,
+       rgba(0, 0, 0, .1) 15%,
+	     rgba(0,0, 0, .1) 25%,
+       transparent 25%,
+       transparent 30%,
+       rgba(0, 0, 0, .1) 30%,
+	     rgba(0,0, 0, .1) 40%,
+       transparent 40%,
+       transparent 45%,
+       rgba(0, 0, 0, .1) 45%,
+	     rgba(0,0, 0, .1) 55%,
+       transparent 55%,
+       transparent 60%,
+       rgba(0, 0, 0, .1) 60%,
+	     rgba(0,0, 0, .1) 70%,
+       transparent 70%,
+       transparent 75%,
+       rgba(0, 0, 0, .1) 75%,
+	     rgba(0,0, 0, .1) 85%,
+       transparent 85%,
+       transparent 90%,
+       rgba(0, 0, 0, .1) 90%,
+	     rgba(0,0, 0, .1) 100%),
+	   -webkit-linear-gradient(top,
+	                           rgba(255, 255, 255, .25),
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #09c, #09c);
+
+    -webkit-border-radius: 2px;
+
+            border-radius: 2px;
+    -webkit-background-size: 100% 100%, 100% 100%, 100% 100%;
+            background-size: 100% 100%, 100% 100%, 100% 100%;
+  -webkit-transition: .5s;
+       -moz-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+}
+progress {
+    display: block;
+    color: #0e3b5c;
+    background: white;
+    border: 1px solid #82888c;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 300px;
+    height: 24px;
+    line-height: 21px;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
 }
