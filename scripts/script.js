@@ -8,8 +8,6 @@
 var array = [];
 
 
-console.log(document.styleSheets[0].cssRules.length);
-
 function get_set(from, to, change) {
   var text = from.value;
   if (text) {
@@ -25,7 +23,7 @@ function get_set(from, to, change) {
       button.disabled = 'true';
       input.disabled = 'true';
       wrap.classList.add('full');
-    }
+    }some
   }
   else {
     input.classList.add('error');
@@ -47,6 +45,40 @@ button.addEventListener('click', function() {
   }
 }
 
+
+var playPause = document.getElementById('playPause'),
+    videoDiv = document.getElementsByClassName('video')[0],
+    duration = document.getElementById('duration'),
+    video = document.getElementById('video');
+var dur = 0,
+    min = 0;
+
+video.addEventListener('loadedmetadata', function() {
+  dur = video.duration;
+  duration.innerHTML = Math.floor(dur / 60) +":"+ Math.floor(dur % 60);
+});
+
+
+
+videoDiv.onclick = function(e) {
+  var target = e.target;
+
+  if (target.id == "playPause" || target.id == 'video') {
+    duration.style.display = 'none';
+    if (video.paused == true) {
+      video.play();
+      playPause.classList.add('running');
+    }
+    else {
+      playPause.classList.remove('running');
+      playPause.classList.add('pause');
+      video.pause();
+
+    }
+  }
+
+
+}
 
 
 
