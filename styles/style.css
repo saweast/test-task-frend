@@ -3,6 +3,9 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+input:focus, button:focus {
+  outline: none;
+}
 body {
   color: #333333;
   font: 700 13px / 20px Arial;
@@ -15,6 +18,9 @@ body {
   padding: 25px;
   background-color: #edf8ff;
   border: 1px solid #a7c5d5;
+}
+.wrapper.full {
+  background-color: #62b859;
 }
 .video .youtube {
   width: 100%;
@@ -38,6 +44,20 @@ body {
   -webkit-box-shadow: inset 0px 0px 5px 0px #d9d9d9;
      -moz-box-shadow: inset 0px 0px 5px 0px #d9d9d9;
           box-shadow: inset 0px 0px 5px 0px #d9d9d9;
+  -webkit-transition: .2s;
+     -moz-transition: .2s;
+       -o-transition: .2s;
+          transition: .2s;
+}
+.friends input.error {
+  -webkit-box-shadow: inset 0px 0px 25px 1px red;
+     -moz-box-shadow: inset 0px 0px 25px 1px red;
+          box-shadow: inset 0px 0px 25px 1px red;
+}
+.friends input.full {
+  -webkit-box-shadow: inset 0px 0px 25px 1px green;
+     -moz-box-shadow: inset 0px 0px 25px 1px green;
+          box-shadow: inset 0px 0px 25px 1px green;
 }
 .friends button {
   font-size: 12px;
@@ -51,6 +71,10 @@ body {
      -moz-border-radius: 5px;
           border-radius: 5px;
   border: 1px solid #18581d;
+  -webkit-transition: .2s;
+     -moz-transition: .2s;
+       -o-transition: .2s;
+          transition: .2s;
 }
 .friends p {
   margin-top: 20px;
@@ -58,6 +82,27 @@ body {
   margin: 20px 0 0 0;
   font-size: 12px;
   font-weight: 400;
+  line-height: 1.2;
+  -webkit-transition: .2s;
+     -moz-transition: .2s;
+       -o-transition: .2s;
+          transition: .2s;
+}
+.friends {
+  -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
+}
+.friends button:active {
+   background: -webkit-linear-gradient(90deg, #62b859 0%, #35863c 100%);
+  background: -moz-linear-gradient(90deg, #62b859 0%, #35863c 100%);
+  background: -o-linear-gradient(90deg, #62b859 0%, #35863c 100%);
+  background: linear-gradient(0deg, #62b859 0%, #35863c 100%);
+  -webkit-transition: .2s;
+     -moz-transition: .2s;
+       -o-transition: .2s;
+          transition: .2s;
 }
 @media screen and (min-width: 710px) {
   .video {
