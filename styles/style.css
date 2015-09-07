@@ -104,72 +104,6 @@ body {
        -o-transition: .2s;
           transition: .2s;
 }
-::-webkit-progress-bar {
-    background: white;
-}
-progress[value]::-webkit-progress-value {
-  background-image:
-	   -webkit-linear-gradient(-33deg,
-       rgba(0, 0, 0, .1) 0%,
-	     rgba(0,0, 0, .1) 10%,
-       transparent 10%,
-       transparent 15%,
-       rgba(0, 0, 0, .1) 15%,
-	     rgba(0,0, 0, .1) 25%,
-       transparent 25%,
-       transparent 30%,
-       rgba(0, 0, 0, .1) 30%,
-	     rgba(0,0, 0, .1) 40%,
-       transparent 40%,
-       transparent 45%,
-       rgba(0, 0, 0, .1) 45%,
-	     rgba(0,0, 0, .1) 55%,
-       transparent 55%,
-       transparent 60%,
-       rgba(0, 0, 0, .1) 60%,
-	     rgba(0,0, 0, .1) 70%,
-       transparent 70%,
-       transparent 75%,
-       rgba(0, 0, 0, .1) 75%,
-	     rgba(0,0, 0, .1) 85%,
-       transparent 85%,
-       transparent 90%,
-       rgba(0, 0, 0, .1) 90%,
-	     rgba(0,0, 0, .1) 100%),
-	   -webkit-linear-gradient(top,
-	                           rgba(255, 255, 255, .25),
-	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, #09c, #09c);
-
-    -webkit-border-radius: 2px;
-
-            border-radius: 2px;
-    -webkit-background-size: 100% 100%, 100% 100%, 100% 100%;
-            background-size: 100% 100%, 100% 100%, 100% 100%;
-  -webkit-transition: .5s;
-       -moz-transition: .5s;
-         -o-transition: .5s;
-            transition: .5s;
-}
-progress {
-    display: block;
-    color: #0e3b5c;
-    background: white;
-    border: 1px solid #82888c;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 300px;
-    height: 24px;
-    line-height: 21px;
-    font-size: 15px;
-    font-family: sans-serif;
-    text-align: center;
-}
-
 .video {
   position: relative;
 }
@@ -209,16 +143,145 @@ progress {
   background-image: none;
 }
 
-progress {
+.friends .progress {
   position: relative;
+  width: 100%;
+  height: 26px;
+  border: 1px solid #82888c;
+  background: white;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
-progress:after {
+.progress .persent {
+  width: 0.1%;
+  height: 24px;
+  background-image:
+	   -webkit-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, rgba(0,0, 0, .1) 100%), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .25)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#09c), to(#09c));
+  background-image:
+	   -moz-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, rgba(0,0, 0, .1) 100%), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .25)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#09c), to(#09c));
+  background-image:
+	   -o-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, rgba(0,0, 0, .1) 100%), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .25)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#09c), to(#09c));
+  background-image:
+	   linear-gradient(-33deg,
+       rgba(0, 0, 0, .1) 0%,
+	     rgba(0,0, 0, .1) 10%,
+       transparent 10%,
+       transparent 15%,
+       rgba(0, 0, 0, .1) 15%,
+	     rgba(0,0, 0, .1) 25%,
+       transparent 25%,
+       transparent 30%,
+       rgba(0, 0, 0, .1) 30%,
+	     rgba(0,0, 0, .1) 40%,
+       transparent 40%,
+       transparent 45%,
+       rgba(0, 0, 0, .1) 45%,
+	     rgba(0,0, 0, .1) 55%,
+       transparent 55%,
+       transparent 60%,
+       rgba(0, 0, 0, .1) 60%,
+	     rgba(0,0, 0, .1) 70%,
+       transparent 70%,
+       transparent 75%,
+       rgba(0, 0, 0, .1) 75%,
+	     rgba(0,0, 0, .1) 85%,
+       transparent 85%,
+       transparent 90%,
+       rgba(0, 0, 0, .1) 90%,
+	     rgba(0,0, 0, .1) 100%), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .25)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#09c), to(#09c));
+  background-image:
+	   -webkit-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, rgba(0,0, 0, .1) 100%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, #09c, #09c);
+  background-image:
+	   -moz-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, rgba(0,0, 0, .1) 100%), -moz-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -moz-linear-gradient(left, #09c, #09c);
+  background-image:
+	   -o-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, rgba(0,0, 0, .1) 100%), -o-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -o-linear-gradient(left, #09c, #09c);
+  background-image:
+	   linear-gradient(-33deg,
+       rgba(0, 0, 0, .1) 0%,
+	     rgba(0,0, 0, .1) 10%,
+       transparent 10%,
+       transparent 15%,
+       rgba(0, 0, 0, .1) 15%,
+	     rgba(0,0, 0, .1) 25%,
+       transparent 25%,
+       transparent 30%,
+       rgba(0, 0, 0, .1) 30%,
+	     rgba(0,0, 0, .1) 40%,
+       transparent 40%,
+       transparent 45%,
+       rgba(0, 0, 0, .1) 45%,
+	     rgba(0,0, 0, .1) 55%,
+       transparent 55%,
+       transparent 60%,
+       rgba(0, 0, 0, .1) 60%,
+	     rgba(0,0, 0, .1) 70%,
+       transparent 70%,
+       transparent 75%,
+       rgba(0, 0, 0, .1) 75%,
+	     rgba(0,0, 0, .1) 85%,
+       transparent 85%,
+       transparent 90%,
+       rgba(0, 0, 0, .1) 90%,
+	     rgba(0,0, 0, .1) 100%), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .25)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#09c), to(#09c));
+  background-image:
+	   -webkit-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, .	     rgba(0,0, 0, .1) 100%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, #09c, #09c);
+  background-image:
+	   -moz-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, .	     rgba(0,0, 0, .1) 100%), -moz-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -moz-linear-gradient(left, #09c, #09c);
+  background-image:
+	   -o-linear-gradient(123deg, rgba(0, 0, 0, .1) 0%, rgba(0,0, 0, .1) 10%, transparent 10%, transparent 15%, rgba(0, 0, 0, .1) 15%, rgba(0,0, 0, .1) 25%, transparent 25%, transparent 30%, rgba(0, 0, 0, .1) 30%, rgba(0,0, 0, .1) 40%, transparent 40%, transparent 45%, rgba(0, 0, 0, .1) 45%, rgba(0,0, 0, .1) 55%, transparent 55%, transparent 60%, rgba(0, 0, 0, .1) 60%, rgba(0,0, 0, .1) 70%, transparent 70%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0,0, 0, .1) 85%, transparent 85%, transparent 90%, rgba(0, 0, 0, .1) 90%, .	     rgba(0,0, 0, .1) 100%), -o-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -o-linear-gradient(left, #09c, #09c);
+  background-image:
+	   linear-gradient(-33deg,
+       rgba(0, 0, 0, .1) 0%,
+	     rgba(0,0, 0, .1) 10%,
+       transparent 10%,
+       transparent 15%,
+       rgba(0, 0, 0, .1) 15%,
+	     rgba(0,0, 0, .1) 25%,
+       transparent 25%,
+       transparent 30%,
+       rgba(0, 0, 0, .1) 30%,
+	     rgba(0,0, 0, .1) 40%,
+       transparent 40%,
+       transparent 45%,
+       rgba(0, 0, 0, .1) 45%,
+	     rgba(0,0, 0, .1) 55%,
+       transparent 55%,
+       transparent 60%,
+       rgba(0, 0, 0, .1) 60%,
+	     rgba(0,0, 0, .1) 70%,
+       transparent 70%,
+       transparent 75%,
+       rgba(0, 0, 0, .1) 75%,
+	     rgba(0,0, 0, .1) 85%,
+       transparent 85%,
+       transparent 90%,
+       rgba(0, 0, 0, .1) 90%,
+	     rgba(0,0, 0, .1) 100%),
+	   linear-gradient(top,
+	                           rgba(255, 255, 255, .25),
+	                           rgba(0, 0, 0, .25)),
+	   linear-gradient(left, #09c, #09c);
+  -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
+}
+.progress p {
+  display: inline-block;
+  width: auto;
   position: absolute;
-  content: '0 из 10';
-  left: 40%;
-  top: 0;
-  color: #333333;
+  top: 3px;
+  padding: 0;
+  margin: 0;
+  left: 42%;
+  color: #030365;
+  font-size: 16px;
 }
+
+
 
 @media screen and (min-width: 710px) {
   .video {
@@ -238,10 +301,6 @@ progress:after {
   .friends h1 {
     margin-top: 0;
     margin-bottom: 15px;
-  }
-  .friends progress {
-    width: 100%;
-    margin-bottom: 20px;
   }
   .friends input {
     width: 60%;
@@ -270,11 +329,6 @@ progress:after {
     font-size: 24px;
     text-align: center;
   }
-  .friends progress {
-    width: 75%;
-    margin: 0 13% 25px;
-    height: 60px;
-  }
   .friends input {
     width: 75%;
     margin: 0 13% 25px;
@@ -292,12 +346,16 @@ progress:after {
     margin-top: 25px;
     font-size: 24px;
   }
-  progress:after {
-    left: 40%;
-    top: 25%;
-    font-size: 24px;
+  .friends .progress {
+    height: 60px;
+    width: 75%;
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  .progress .descr {
+    margin-top: 10px;
+  }
+  .progress .persent {
+    height: 60px;
   }
 }
-
-
-
